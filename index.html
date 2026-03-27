@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Antibiotic Resistance Pattern Analysis</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 20px;
+            color: #2c3e50;
+        }
+
+        .error {
+            color: #e74c3c;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Antibiotic Resistance Pattern Analysis</h1>
+
+    <p class="error">
+        Unable to connect to server.<br>
+        Please check your internet connection and try again.
+    </p>
+
+    <button onclick="retry()">Retry</button>
+</div>
+
+<script>
+    function retry() {
+        location.reload();
+    }
+</script>
+
+</body>
+</html>
